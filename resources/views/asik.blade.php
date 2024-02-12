@@ -8,6 +8,7 @@
       </head>    
 <body>
     <h1>Selamat datang di Web Suryo</h1>
+    <h2>asik</h2>
     <p>halo gaes nama saya suryo. saya lahir di falabisahaya dofa maluku utara.</p>
 
 <a href="/">home</a>  
