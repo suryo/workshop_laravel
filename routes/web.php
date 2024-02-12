@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CobaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +25,5 @@ Route::get('/asik', function () {
 Route::get('/belajar', function () {
     return view('test');
 });
+
+Route::get('/coba', [CobaController::class, 'index']);

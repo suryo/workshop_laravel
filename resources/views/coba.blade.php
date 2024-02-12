@@ -7,10 +7,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
       </head>    
 <body>
-    <h1>Selamat datang di Web Suryo</h1>
-    <h2>asik</h2>
+    <h1>Selamat datang di Web {{ $nama }}</h1>
+    <h2>coba</h2>
     <p>halo gaes nama saya suryo. saya lahir di falabisahaya dofa maluku utara.</p>
 
+{{ $angka3 }}
 <a href="/">home</a>  
 <a href="/asik">link 1</a>
 <a href="/belajar">link 2</a>
