@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CobaController;
+
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +30,12 @@ Route::get('/belajar', function () {
 });
 
 Route::get('/coba', [CobaController::class, 'index']);
+
+Route::get('/category', [CategoryController::class, 'index']);
+Route::get('/category_add', [CategoryController::class, 'add']);
+Route::post('/category_save', [CategoryController::class, 'save']);
+
+
+
+
+Route::get('/product', [ProductController::class, 'index']);

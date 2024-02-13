@@ -8,12 +8,26 @@
       </head>    
 <body>
     <h1>Selamat datang di Web Suryo</h1>
+    <h2>add Category</h2>
     <p>Workshop Laravel, Koneksi Ke Database</p>
 
-    <a href="/">home</a>  
-    <a href="/category">Category</a>
-    <a href="/product">Product</a>
-    
+<a href="/">home</a>  
+<a href="/category">Category</a>
+<a href="/product">Product</a>
+<br>
+<a href="/category_add">Add Category</a>
+
+
+<form action="/category_save" method="POST">
+    @csrf
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Category</label>
+        <input type="text" class="form-control" name="category" id="category" >
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 

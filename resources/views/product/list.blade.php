@@ -8,12 +8,28 @@
       </head>    
 <body>
     <h1>Selamat datang di Web Suryo</h1>
+    <h2>List Product</h2>
     <p>Workshop Laravel, Koneksi Ke Database</p>
 
-    <a href="/">home</a>  
-    <a href="/category">Category</a>
-    <a href="/product">Product</a>
-    
+<a href="/">home</a>  
+<a href="/category">Category</a>
+<a href="/product">Product</a>
+
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Product</th>
+    </tr>
+    @for ($i=0; $i<count($response_tbl_product); $i++)
+    <tr>
+        <td>{{ $response_tbl_product[$i]->id }}</td>
+        <td>{{ $response_tbl_product[$i]->product }}</td>
+    </tr> 
+    @endfor
+</table>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
